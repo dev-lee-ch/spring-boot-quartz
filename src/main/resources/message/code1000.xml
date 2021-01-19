@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Code Message 1000</comment>
+    
+    <entry key="1000">[{0}]은 필수 값 입니다. </entry>    
+    <entry key="1001">이미 등록된 작업명 입니다. [{0}]</entry>
+    <entry key="1002">잘못된 표현식 입니다. [{0}]</entry>
+    <entry key="1003">파일이 존재하지 않습니다. [{0}]</entry>  
+      
+    <entry key="1004">등록되지 않은 작업명 입니다. [{0}]</entry>
+    <entry key="1005">해당 작업이 실행중 입니다. 작업 종료 후 요청 하세요. [{0}]</entry>
+    <entry key="1006">해당 작업이 미실행중 입니다. [{0}]</entry>
+    <entry key="1007">해당 작업이 활성화 상태 입니다. [{0}]</entry>
+</properties>

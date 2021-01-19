@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Code Message Common</comment>
+    <entry key="200">Success</entry>
+    <entry key="400">Request info error.</entry>
+    <entry key="401">This service requires login.</entry>
+    <entry key="403">Access forbidden.</entry>
+    <entry key="404">Page not found.</entry>
+    <entry key="500">There was a system error.</entry>
+    
+    <entry key="600">[{0}] Required.</entry>
+    <entry key="610">[{0}] Only numbers are allowed.</entry>
+    <entry key="611">[{0}] Only available for at least {1}.</entry>
+    <entry key="612">[{0}] It can only be less than {1} max.</entry>
+    <entry key="613">[{0}] Only {1} ~ {2} are allowed.</entry>
+    <entry key="620">[{0}] At least {1} digits are allowed.</entry>
+    <entry key="621">[{0}] It can only be up to {1} digits long.</entry>
+    <entry key="622">[{0}] Only {1} ~ {2} digits are allowed.</entry>
+    <entry key="630">[{0}] Only date ({1}) is allowed.</entry>
+    <entry key="640">[{0}] Patterns do not match.</entry>
+
+    <entry key="700">Login information does not exist.</entry>
+    <entry key="701">Your session ended with a connection from another device.</entry>
+</properties>

@@ -1,0 +1,49 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'kr.co.ensecure'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11' 
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-quartz'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	compile("org.springframework.boot:spring-boot-devtools") /* Auto Refresh */
+	
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')	/* JSP 사용시 추가 */
+	compile('javax.servlet:jstl:1.2')						/* JSP 사용시 추가 */
+	
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.12'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+	compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
+	compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
+	
+	compile group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4.1', version: '1.16'
+	
+	compile group: 'com.google.guava', name: 'guava', version: '30.0-jre'
+}
+
+test {
+	useJUnitPlatform()
+}

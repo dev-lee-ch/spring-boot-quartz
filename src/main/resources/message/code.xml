@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Code Message Common</comment>
+    <entry key="200">정상 처리 되었습니다.</entry>
+    <entry key="400">요청정보 오류입니다.</entry>
+    <entry key="401">로그인이 필요한 서비스입니다.</entry>
+    <entry key="403">접근 권한이 없습니다.</entry>
+    <entry key="404">페이지가 존재하지 않습니다.</entry>
+    <entry key="500">시스템 오류가 발생하였습니다.</entry>
+    
+    <entry key="600">[{0}] 필수 입니다.</entry>
+    <entry key="610">[{0}] 숫자만 가능합니다.</entry>
+    <entry key="611">[{0}] 최소 {1}이상만 가능합니다.</entry>
+    <entry key="612">[{0}] 최대 {1}이하만 가능합니다.</entry>
+    <entry key="613">[{0}] {1} ~ {2}만 가능합니다.</entry>
+    <entry key="620">[{0}] 최소 {1}자리 이상만 가능합니다.</entry>
+    <entry key="621">[{0}] 최대 {1}자리 이하만 가능합니다.</entry>
+    <entry key="622">[{0}] {1} ~ {2}자리만 가능합니다.</entry>
+    <entry key="630">[{0}] 날짜({1})만 가능합니다.</entry>
+    <entry key="640">[{0}] 패턴이 일치하지 않습니다.</entry>
+
+    <entry key="700">로그인 정보가 존재하지 않습니다.</entry>
+    <entry key="701">다른 기기에서 접속하여 세션이 종료되었습니다.</entry>
+</properties>

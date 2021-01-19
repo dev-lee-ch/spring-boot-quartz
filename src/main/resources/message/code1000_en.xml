@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Code Message 1000</comment>
+    
+    <entry key="1000">[{0}] is require value. </entry>    
+    <entry key="1001">Already registered job name. [{0}]</entry>    
+    <entry key="1002">Invalid expression. [{0}]</entry>
+    <entry key="1003">File does not exist. [{0}]</entry>
+        
+</properties>

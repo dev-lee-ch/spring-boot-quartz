@@ -1,0 +1,48 @@
+server:
+  port: 9080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+# Spring Config      
+spring:
+  banner:
+    # banner generator : http://patorjk.com/software/taag    location: classpath:banner/banner_shadow.txt
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  datasource:    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://10.10.20.45:3306/eNgen_Admin?allowMultiQueries=true
+    username: portaladmin
+    password: imsi00..!! 
+      
+  datasource2:
+    driver-class-name: org.mariadb.jdbc.Driver
+    jdbcUrl: jdbc:mariadb://10.10.20.45:3306/eNgen_Admin?allowMultiQueries=true
+    username: portaladmin
+    password: imsi00..!!
+      
+  # Quartz Config
+  quartz:
+    # 쿼츠  관리 방식 (jdbc, memory)
+    job-store-type: jdbc
+    jdbc:
+      # 쿼츠관련 테이블 스키마 자동생성 옵션(대상 DB: Default Datasource)      initialize-schema: embedded
+    scheduler-name: QuartScheduler
+    properties:
+      org.quartz.jobStore:
+        useProperties: true # JobDataMap 정보 문자열로 저장
+
+# MyBatis Config
+mybatis:  configuration:    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    jdbc-type-for-null: NULL
+    log-prefix: mybatis.mapper.
+    local-cache-scope: statement
+            
+      
